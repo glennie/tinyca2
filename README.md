@@ -9,7 +9,14 @@ This is a "fork" from debian sources.
 * My contribution to this package:
 ** New github repo from debian's source
 ** Cleaned the debian patches by removing debian specific stuff
-** Modified PKGBUILD, so that it will retrive the source from my github repo.
+** Added arch sub directory with arch linux related stuff
+
+Changelog
+=======
+version 0.7.5-2 - Tue May 31 2014
+  * Added arch related stuff
+  * Cleaned debian related stuff
+  * Moved templates from /usr/share/tinyca2 to /etc/tinyca
 
 
 Final words
