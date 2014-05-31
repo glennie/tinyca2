@@ -1,0 +1,212 @@
+$Id: CHANGES,v 1.23 2006/07/25 20:10:54 sm Exp $
+
+version 0.7.5 - Tue July 25 2006
+   * added swedish translation
+     many thanks to Daniel Nylander
+
+version 0.7.4 - Thu June 29 2006
+   * fixed invalid filename encoding with german umlauts in base64
+     thanks to Bruno Blumenthal
+   * Fixed display of UTF8 characters in the GUI
+     Debian #367829
+
+version 0.7.3 - Tue May 23 2006
+   * Add environment variable
+     Gentoo #78576
+     thanks to dragonheart at gentoo dot org
+   * Fixed crash when CA is created with nsCertType
+     Debian #354386
+
+version 0.7.3 - Tue May 23 2006
+   * Enhanced version detection
+     thanks to Peter Marschall 
+     Debian #360766 #360555
+   * Changed command for openssl due to changed openssl behavior 
+     regarding fingerprints
+     thanks to Peter Marschall
+     Debian #360768
+   * Added "friendly name" to PKCS#12 export
+     Debian #364617
+   * Corrected exit call
+     thanks to Peter Marschall
+     Debian #360767
+     
+
+version 0.7.2 - Sat Feb 18 2006
+   * Fixed bug, which made keysize always 4096
+   * Implemented correct usage of openssl crl depending on openssl version
+   * Added tar file support for export
+
+version 0.7.1 - Sat Oct 22 2005
+   * Fixed possible crashbug, thanks to 
+   * Choose CA validity as maximal certificate lifetime
+   * correctly include/don't include keys in exported certificate files
+     thanks to "thus0 at free dot fr"
+   * added ripemd160 support, thanks to Wim Lewis
+   * added possibility to create pkcs#12 without password
+   * fixed broken OU in SubCA, thanks to Charles Lepple
+   * fixed bug which made saving options with comboboxes impossible
+     thanks to "thus0 at free dot fr"
+   * fixed bug inseting the right serial number during import
+     thanks to Daniel Kahn Gillmor
+
+version 0.7.0 - Sun Apr 10 2005
+   * migrated to perl-Gtk2
+   * added advanced export options (Debian #293931)
+   * added CA history
+   * fixed some minor bugs
+
+version 0.6.8 (beta) - Sun Feb 20 2004
+   * added detection for openssl 0.9.8
+   * removed crlDistributionPoint for Root-CA
+   * added patch for multiple OUs 
+     Thanks to Uwe Arndt <arndt@uni-koblenz.de>
+   * added patch for multiple subjectAltName extensions (Debian #271183)
+     Thanks to Peter Marschall <peter@adpm.de>
+
+version 0.6.7 (beta) - Mon Dec  5 2004
+   * added import functionality
+
+version 0.6.6 (beta) - Fri Aug 13 2004
+   * added czech translation
+     Thanks to Robert Wolf <gentoo@slave.umbr.cas.cz>
+
+version 0.6.5 (beta) - Thu Aug 05 2004
+   * added spanish translation
+     Thanks to Ramon Pons Vivanco <rpons@rinu.org>
+   * force (re)parsing a newly created request
+   * force delete of internal structures, when deleting a CA
+
+version 0.6.4 (beta) - Thu Jul 15 2004
+   * fixed bug, showing wrong options for renewal of certificates
+   * fixed bug creating requests via rightclick directly after creating a new CA
+     (thanks to wbx@openbsd.de)
+   * fixed bug which added ugly empty box to cert/req page
+   * fixed bug with wrong openssl.conf during startup (server-cert with
+     ca-extensions)
+     (thanks to bernhard.dawuidow@tronicplanet.de)
+   * fixed ca-config dialog during creation of root-ca (drop-downs)
+     (thanks to X_KurJ@viessmann.com)
+   * revocation reason can be given with openssl 0.9.7
+   * changed default exportdir to users home
+   * remeber exportdir from last export
+   * added possibility to set the extension extendedKeyUsage 
+   * added possibility to leave email out of the subject dn (0.9.7)
+
+version 0.6.3 (beta) - Wed Jun 16 2004
+   * fixed bug which made it impossible to create new requests
+
+version 0.6.2 (beta) - Sun Jun 13 2004
+   * added new look for some functions
+   * key, request and certificate can be generated in one step
+   * code cleanup
+
+version 0.6.1 (beta) - Sat May 22 2004
+   * fixed bug, which made it impossible to create a new Root-CA
+     Thanks to Olaf Gellert <og@pre-secure.de>
+
+version 0.6.0 (beta) - Tue May 11 2004
+   * some minor usability improvements
+   * added possibility to create SubCAs now
+   * added possibility also to use DSA keys
+   * added possibility to select the digest during key creation
+   * added possibility to export the complete CA-chain of a SubCA
+   Thanks a lot to Olaf Gellert <og@pre-secure.de> for ideas and patches.
+
+version 0.5.4 (beta) - Fri Oct  3 2003
+   * added a lot of configuration options
+   * correctly import/show details of requests without extensions
+     (thanks to James.Leavitt@anywaregroup.com)
+
+version 0.5.3 (beta) - Mon Sep 29 2003
+   * fixed wrong label while creating new CA
+   * fixed bug, saving configuration is possible again
+
+version 0.5.2 (beta) - Mon Sep  1 2003
+   * added renewal of certificates
+   
+version 0.5.1 (beta) - Tue Aug 26 2003
+   * code cleanup
+   * fixed some minor bugs and typos
+   * corrected some window sizes and tables
+   * added accelerators to the menu
+
+version 0.5.0 (beta) - Sat Aug 16 2003
+   * GUI rewriten with perl-Gtk/Gnome
+
+version 0.4.9 (beta) - Sat Jul  5 2003
+   * added german translation
+
+version 0.4.8 (beta) - Tue Jul  1 2003
+   * convert index.txt if openssl changed from 0.9.6x to 0.9.7x
+
+version 0.4.7 (beta) - Fri Jun 27 2003
+   * added export into zip-file
+     thanks to ludwig.nussel@suse.de
+
+version 0.4.6 (beta) - Mon Jun 23 2003
+   * some tiny usability improvements
+     thanks to ludwig.nussel@suse.de again
+
+version 0.4.5 (beta) - Thu Jun 19 2003
+   * some usability improvements 
+     thanks to ludwig.nussel@suse.de
+   * some more configuration options
+
+version 0.4.4 (beta) - Fri Oct  4 2002
+   * Fixed bug exporting keys in PEM format
+   * Fixed possible empty lines in cert/key/reqlist
+     thanks to waldemar.mertke@gmx.de
+
+version 0.4.3 (beta) - Fri Sep 27 2002
+   * Fixed some minor bugs and typos (e.g. concerning openssl 0.9.7)
+     thanks to iebgener@yahoo.com and waldemar.mertke@gmx.de
+
+version 0.4.2 (beta) - Sat Aug 24 2002
+   * fixed revocation when serial is > 15 
+     thanks to curly@e-card.bg
+   * fixed recognition of java-generated requests
+     thanks to matthew.lewis@syntegra.com
+   * code cleanup
+
+version 0.4.1 (beta) - Wed Aug 21 2002
+   * fixed revocation
+   * added some colors
+   * thanks to curly@e-card.bg
+
+version 0.4.0 (beta) - Sun Aug 18 2002
+   * works independent of OpenCA modules now
+   * some enhancements to functionality (e.g. export of key without 
+     passwd)   
+   * some smaller bugfixes in usability
+   * new specfile (thanks to oron@actcom.co.il)
+
+version 0.3.4 (beta) - Mon Jun  3 2002
+   * fixed wrong templatedir when creating a new CA
+
+version 0.3.3 (beta) - Sun Jun  2 2002
+   * fixed some minor bugs and typos
+     import of requests from ssh-sentinel should work now without problems
+
+version 0.3.2 (beta) - Sat May 11 2002
+   * added parser for x509 extensions when viewing certificate details
+
+version 0.3.1 (beta) - Fri May  3 2002
+   * added option to view complete certificate/request as text
+
+version 0.3.0 (beta) - Thu Apr 18 2002
+   * added possibility to configure openssl
+   * fixed some minor bugs
+
+version 0.2.5 (beta) - Sun Apr  7 2002
+   * improved usabilty and errorhandling
+   * fixed some minor bugs and typos
+
+version 0.2.4 (beta) - Sun Mar 31 2002
+   * added possibilty to import PKCS#10 requests
+   * added function to delete a configured CA
+
+version 0.2.3 (beta) - Tue Mar 26 2002
+   * fixed bug with expiration date defaults to 30 days when creating
+     a new CA
+   * change status to E in index.txt, if certificate is expired

@@ -1,0 +1,30 @@
+1. Unpack the sources (seems like you got it already)
+
+2. Configure the following paths for your setup. These variables 
+   are located in the file tinyca itself.
+
+@INC                    (location of the directory lib)
+$init->{'opensslbin'}   (location of your openssl binary)
+$init->{'templatedir'}  (location of the directory templates)
+$init->{'zipbin'}       (location of your zip binary)
+$init->{'tarbin'}       (location of your tar binary)
+
+3. If you want to have german/spanish/czech/swedish texts:
+   Generate the file tinyca.mo from po/de.po:
+   msgfmt po/de.po -o locale/de/LC_MESSAGES/tinyca.mo
+   msgfmt po/es.po -o locale/es/LC_MESSAGES/tinyca.mo
+   msgfmt po/cs.po -o locale/cs/LC_MESSAGES/tinyca.mo
+   msgfmt po/sv.po -o locale/sv/LC_MESSAGES/tinyca.mo
+   or even more simple: call make in the directory po/
+
+   If your locale is not set to german/spanish:
+   export LC_ALL=de_DE.UTF-8
+   or
+   export LC_ALL=es_ES.UTF-8
+   or
+   export LC_ALL=cs_CZ.UTF-8
+   or
+   export LC_ALL=sv_SE.UTF-8
+   before you call tinyca.
+
+4. Call tinyca2, use it and report bugs :-))
