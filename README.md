@@ -20,4 +20,3 @@ version 0.7.5-2 - Tue May 31 2014
 ##Final words
 * Give credit where credit is due : my own contribution here is very limited. Please go through the source and give credits to contributors.  
 * Tested on my arch installation. YMMV. It may eat your kitten, bite you dog or burn your cpu. So this package at your own risk ;-)
-
