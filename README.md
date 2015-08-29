@@ -1,4 +1,4 @@
-#tinyCA2 - version 0.7.5-2
+#tinyCA2 - version 0.7.5-3
 
 This is a "fork" from debian sources.
 * This repo contains shamelessly stolen debian patches (stolen-from-debian.patch). The debian patch has been modified to be used with arch linux.
@@ -16,7 +16,10 @@ version 0.7.5-2 - Tue May 31 2014
   * Cleaned debian related stuff
   * Moved templates from /usr/share/tinyca2 to /etc/tinyca
 
+version 0.7.5-3 - Sat August 29 2015
+  * added patches sub dir currently used patches
+    * Added sha2 support by a patch stolen from Debian bug tracking system (https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=759481#10). The patch is from Ross Vandegrift <ross@kallisti.us>
 
 ##Final words
-* Give credit where credit is due : my own contribution here is very limited. Please go through the source and give credits to contributors.  
-* Tested on my arch installation. YMMV. It may eat your kitten, bite you dog or burn your cpu. So this package at your own risk ;-)
+* Give credit where credit is due : my own contribution here is very limited. Please go through the source and give credits to contributors.
+* Tested on my arch installation. YMMV. It may eat your kitten, bite you dog or burn your cpu. So use this package at your own risk ;-)
